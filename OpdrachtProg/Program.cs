@@ -10,22 +10,21 @@ namespace OpdrachtProg
             int myInt;
             DragonList dragonList = new DragonList();
             
-            Pokemon Flygon = new Pokemon("Flygon");
-            Pokemon Dratini = new Pokemon("Dratini");
-            Pokemon Charizard = new Pokemon("Charizard");
-            Pokemon Zygarde = new Pokemon("Zygarde");
+            Pokemon Zekrom = new Legendary("Zekrom");
+            Pokemon Giratina = new Legendary("Giratina");
+            Pokemon Rayquaza = new Legendary ("Rayquaza");
+            Pokemon Zygarde = new Legendary("Zygarde");
 
 
-            dragonList.AddDragonTypes(Flygon);
-            dragonList.AddDragonTypes(Dratini);
-            dragonList.AddDragonTypes(Charizard);
+            dragonList.AddDragonTypes(Zekrom);
+            dragonList.AddDragonTypes(Giratina);
+            dragonList.AddDragonTypes(Rayquaza);
             dragonList.AddDragonTypes(Zygarde);
             
             foreach(Pokemon c in dragonList.GetPokemon())
             {
-                Console.WriteLine(c.GetName());
-                
-                
+                //Console.WriteLine(c.GetName());
+                c.Use();
             }
             
         }

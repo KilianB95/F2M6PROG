@@ -6,18 +6,20 @@ using System.Linq;
 
 namespace OpdrachtProg
 {
-    class Pokemon
+    abstract class Pokemon
     {
-        private string name;
+        
+        public string name { get; private set; }
 
-        public Pokemon(string Name)
+        protected Pokemon(string Name)
         {
             name = Name;
+           
         }
         public string GetName()
         {
             return name;
         }
-        
+        public abstract void Use();
     }
 }
