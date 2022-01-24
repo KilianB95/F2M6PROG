@@ -6,13 +6,14 @@ namespace OpdrachtProg
 {
     class Legendary : Pokemon
     {
-       public Legendary(string name) : base(name)
+       public Legendary(string name, PokemonTypes types) : base(name, types)
         {
 
         }
         public override void Use()
         {
-            Console.WriteLine("I CHOOSE U !!!!:" + name);
+            
+            Console.WriteLine("This Pokemon is : " + name + " Type : " + Types);
         }
     }
 }

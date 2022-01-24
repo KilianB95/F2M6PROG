@@ -8,6 +8,7 @@ namespace OpdrachtProg
 {
     class DragonList
     {
+      
         private List<Pokemon> _pokemon;
 
        public DragonList()
