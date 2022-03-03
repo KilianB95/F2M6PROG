@@ -5,10 +5,12 @@ namespace OpdrachtProg
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
             int myInt;
             DragonList dragonList = new DragonList();
+            
             
 
             Pokemon Zekrom = new Legendary("Zekrom", PokemonTypes.Electric);
@@ -21,14 +23,22 @@ namespace OpdrachtProg
             dragonList.AddDragonTypes(Giratina);
             dragonList.AddDragonTypes(Rayquaza);
             dragonList.AddDragonTypes(Zygarde);
-            
-            foreach(Pokemon c in dragonList.GetPokemon())
+
+            Console.WriteLine("Typ de volgende pokemons hun naam in om daarbij te weten te komen welke type ze zijn: Zekrom, Zygarde, Rayquaza, Giratina");
+            string Input = Console.ReadLine();
+            foreach (Pokemon c in dragonList.GetPokemon())
             {
-                Console.WriteLine(c.GetName());
-                c.Use();
+                if (Input == c.name)
+                {
+                    
+                    Console.WriteLine(c.Types);
+                }
+                //Console.WriteLine(c.GetName());
+               //c.Use();
             }
             
         }
+        
     }
 
   

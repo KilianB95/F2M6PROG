@@ -6,7 +6,8 @@ namespace OpdrachtProg
 {
     class Legendary : Pokemon
     {
-       public Legendary(string name, PokemonTypes types) : base(name, types)
+      
+        public Legendary(string name, PokemonTypes types) : base(name, types)
         {
 
         }

@@ -10,6 +10,9 @@ namespace OpdrachtProg
     {
       
         private List<Pokemon> _pokemon;
+        
+
+        
 
        public DragonList()
         {
@@ -28,5 +31,9 @@ namespace OpdrachtProg
             return _pokemon;
         }
         
+
+
+
+
     }
 }

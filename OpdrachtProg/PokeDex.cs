@@ -20,6 +20,8 @@ namespace OpdrachtProg
         public string name { get; private set; }
         public PokemonTypes Types { get; private set; }
 
+        
+
         protected Pokemon(string Name, PokemonTypes types)
         {
             name = Name;
@@ -31,5 +33,8 @@ namespace OpdrachtProg
             return name;
         }
         public abstract void Use();
+
+        
+
     }
 }
